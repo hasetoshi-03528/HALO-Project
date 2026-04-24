@@ -33,6 +33,12 @@ Groq API（Llama3.3 70B）とH.A.L.O.（halo:latest）を対話させ、
 
 ## Self-Playカリキュラム学習計画
 
+### Self-Playのデータ生成:
+
+試運転 → halo:latest（g34b）
+
+本番   → gemma3:12b（g3CB）
+
 ### フェーズ設計
 
 | フェーズ | 期間 | かかる日数 | データ種類 | 難易度 | 1日の回数 |
@@ -58,6 +64,7 @@ Phase5: 2回/日（全種類混合のため36,000トークン/回）
 ---
 
 ## ファイル構成
+```
 halo-selfplay/
 ├── test_run_p1.py      # Phase1 試運転スクリプト
 ├── test_run_p2.py      # Phase2 試運転スクリプト
@@ -76,7 +83,7 @@ halo-selfplay/
 │   ├── log_p1_day2.log
 │   └── ...
 └── state.json          # 進捗管理
-
+```
 ---
 
 ## Colab環境（g3CB ファインチューニング）
