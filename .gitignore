@@ -1,0 +1,25 @@
+# 学習データ（非公開）
+data/T-*.json
+data/halo_training_final.json
+data/halo_training_sample.json
+
+# モデルファイル
+*.gguf
+*.safetensors
+*.bin
+halo_lora/
+halo_merged*/
+halo_output*/
+halo_gguf/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# その他
+.DS_Store
+*.log
+nohup.out
+unsloth_compiled_cache/
